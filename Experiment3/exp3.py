@@ -103,3 +103,21 @@ for name, model, pred in models:
         f1_score(y_test, pred)
     ]
     print(results)
+
+ax = results.set_index("Model").plot(
+    kind = "bar",
+    figsize = (10,6)
+)
+plt.title("Performance Comparison: MLE vs MAP-L2 vs MAP-L1")
+plt.xlabel("Model")
+plt.ylabel("Score")
+plt.ylim(0.85, 1.02) # Sets the y-axis range
+plt.xticks(rotation = 0)
+plt.legend(title = "Metric")
+plt.grid(axis="y", alpha = 0.3)
+
+for container in ax.containers:
+    ax.bar_label(container, fmt = "%.3f", padding = 2) # prints the numerical value above each bar
+
+plt.tight_layout()
+plt.show()
