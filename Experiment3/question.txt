@@ -1,0 +1,7 @@
+Estimate the parameters of a logistic regression model using MLE and MAP on the breast cancer Wisconsin dataset.
+Compare the results and discuss the effects of regularization.
+Tasks:
+-	Load and preprocess the dataset. 
+-	Implement logistic regression with MLE
+-	Apply MAP estimation with different regularization priors (L1 and L2 regularization)
+-	Compare the performance and parameter estimates with MLE and MAP.
