@@ -1,0 +1,8 @@
+Implement and compare the performance of SVM classifiers with linear and RBF kernels on the Fashion MNIST dataset. Analyze the advantages and disadvantages of each kernel type.
+
+Tasks:
+
+1. Load and preprocess the Fashion MNIST dataset
+2. Implement SVM with linear and RBF kernels.
+3. Compare the classification performance for each kernel.
+4. Discuss the strengths and weakness of each kernel type.
